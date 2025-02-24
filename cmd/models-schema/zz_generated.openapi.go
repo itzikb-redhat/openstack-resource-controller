@@ -1306,11 +1306,12 @@ func schema_k_orc_openstack_resource_controller_api_v1alpha1_ImageContent(ref co
 					"download": {
 						SchemaProps: spec.SchemaProps{
 							Description: "download describes how to obtain image data by downloading it from a URL. Must be set when creating a managed image.",
+							Default:     map[string]interface{}{},
 							Ref:         ref("github.com/k-orc/openstack-resource-controller/api/v1alpha1.ImageContentSourceDownload"),
 						},
 					},
 				},
-				Required: []string{"diskFormat"},
+				Required: []string{"diskFormat", "download"},
 			},
 		},
 		Dependencies: []string{

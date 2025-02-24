@@ -229,8 +229,8 @@ type ImageContent struct {
 
 	// download describes how to obtain image data by downloading it from a URL.
 	// Must be set when creating a managed image.
-	// +optional
-	Download *ImageContentSourceDownload `json:"download,omitempty"`
+	// +required
+	Download *ImageContentSourceDownload `json:"download"`
 }
 
 type ImageContentSourceDownload struct {

@@ -322,6 +322,7 @@ var schemaYAML = typed.YAMLObject(`types:
     - name: download
       type:
         namedType: com.github.k-orc.openstack-resource-controller.api.v1alpha1.ImageContentSourceDownload
+      default: {}
 - name: com.github.k-orc.openstack-resource-controller.api.v1alpha1.ImageContentSourceDownload
   map:
     fields:

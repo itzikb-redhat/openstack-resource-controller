@@ -118,7 +118,7 @@ var _ = Describe("ORC Image API validations", func() {
 		image.Spec.Resource = &orcv1alpha1.ImageResourceSpec{
 			Content: &orcv1alpha1.ImageContent{
 				DiskFormat: orcv1alpha1.ImageDiskFormatQCOW2,
-				Download: &orcv1alpha1.ImageContentSourceDownload{
+				Download: orcv1alpha1.ImageContentSourceDownload{
 					URL: "https://example.com/example.img",
 				},
 			},
